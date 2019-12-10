@@ -1,10 +1,11 @@
 #include<iostream>
-/*Vamos a hacer un programa que nos pida 4 números y los guarde para calcular la media*/
+/*Vamos a hacer un programa que nos pida 4 nÃºmeros y los guarde para calcular la media*/
 int main(){
-    //Definición de variable
+    //DefiniciÃ³n de variable
     char salir;
     int num[4];
     int cont;
+    int suma_numero;
     //Introducimos los numeros en el vector
     for(cont=0;cont<=3;cont++){
           std::cout<<"Introduce el numero: ", cont, ":";
@@ -15,9 +16,16 @@ int main(){
     for(cont=0;cont<=3;cont++){
                                std::cout<<num[cont];
     }
-    #define MAX 4
-    printf("\nMEDIA : %.2F\n",suma/MAX);
+    //Calculamos la media 
+    
+    std::cout<<"MEDIA/n";
+    suma_numero=0;
+    for(cont=0;cont<=3;cont++){
+                               suma_numero=suma_numero+num[cont];//suma acumulada
+                               
+    }
+    std::cout<<"La suma vale: "; 
+    std::cout<< suma_numero;
 
     std::cin>> salir;
-    }
-    
+}
